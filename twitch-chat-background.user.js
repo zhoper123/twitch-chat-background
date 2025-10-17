@@ -2,7 +2,7 @@
 // @name         Twitch Chat Background Image
 // @namespace    http://tampermonkey.net/
 // @version      3.3
-// @description  Фон для чата Twitch + настраиваемая виньетка
+// @description  Фон для чата Twitch
 // @author       zhopapopapisya
 // @match        https://www.twitch.tv/*
 // @grant        none
@@ -15,12 +15,12 @@
     const imageUrl = "https://i.redd.it/hear-me-out-v0-sodlstmdd0if1.jpg?width=640&format=pjpg&auto=webp&s=14eada2455ad5bae91d58c8a6a6c90b322f6b63b";
 
     // Настройки
-    let scale = 2.42;                //масштабирование
-    let offsetX = 55;                //смешение по горизонтали (-100 - 100)
-    let offsetY = 50;                //смешение по вертикали (-100 - 100)
-    let darkness = 0.75;             //затемнение (0-1)
-    let vignette = 1;                //затемнение по краям (0-1)
-    let vignetteRadius = 15;         //зона затемнения (0-100)
+    let scale = 2.42;                // масштабирование
+    let offsetX = 55;                // смешение по горизонтали (-100 - 100)
+    let offsetY = 50;                // смешение по вертикали (-100 - 100)
+    let darkness = 0.75;             // затемнение (0-1)
+    let vignette = 1;                // затемнение по краям (0-1)
+    let vignetteRadius = 15;         // зона затемнения (0-100)
 
     function insertBackground() {
         const chatSection = document.querySelector('section[data-test-selector="chat-room-component-layout"]');
@@ -115,3 +115,4 @@
 
     console.log("Илья");
 })();
+
