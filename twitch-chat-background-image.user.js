@@ -263,3 +263,4 @@
     window.addEventListener('resize', updateBackground);
 
 })();
+
